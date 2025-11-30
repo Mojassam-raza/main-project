@@ -1,0 +1,99 @@
+/* full-page center */
+/* .app-container {
+  height: 100vh;
+  background: #000 url('https://i.ibb.co/8dJ0c5H/black-bg.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+} */
+
+/* .title {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+} */
+
+/* chat card */
+/* .chat-box {
+  width: 380px;
+  height: 600px;
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 20px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.chat-area {
+  flex: 1;
+  overflow-y: scroll;
+  padding-right: 5px;
+} */
+
+/* bubbles */
+/* .bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  background: #2f2f2f;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.bubble.left {
+  align-self: flex-start;
+}
+
+.bubble.right {
+  align-self: flex-end;
+  background: #1b1b1b;
+}
+
+.bubble-text {
+  margin: 0;
+}
+
+.time {
+  font-size: 10px;
+  opacity: 0.6;
+  margin-top: 5px;
+  display: block;
+  text-align: right;
+} */
+
+/* input section */
+/* .input-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #2f2f2f;
+  color: white;
+}
+
+button {
+  background: white;
+  border-radius: 20px;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+} */
