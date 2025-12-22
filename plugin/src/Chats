@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <div class="w-full max-w-md h-[600px] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden">
+
+    <!-- Header -->
+    <div class="bg-green-500 text-white p-4 flex items-center gap-3">
+      <div class="w-10 h-10 bg-white/30 rounded-full"></div>
+      <div>
+        <div class="font-semibold">Chat Bot</div>
+        <div class="text-xs">Online</div>
+      </div>
+    </div>
+
+    <!-- Messages Area -->
+    <div id="chat" class="flex-1 p-4 space-y-3 overflow-y-auto bg-gray-50">
+      <div class="flex">
+        <div class="bg-white p-3 rounded-xl shadow text-sm max-w-[80%]">Hello! How can I help you?</div>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="bg-green-500 text-white p-3 rounded-xl shadow text-sm max-w-[80%]">I want a chat UI.</div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="p-3 flex gap-2 border-t">
+      <input id="msgInput" type="text" placeholder="Type a message" class="flex-1 border rounded-full px-4 py-2 focus:outline-none" />
+      <button onclick="sendMsg()" class="bg-green-500 text-white px-4 py-2 rounded-full">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMsg() {
+      const input = document.getElementById('msgInput');
+      const chat = document.getElementById('chat');
+
+      if (input.value.trim() === '') return;
+
+      const msgDiv = document.createElement('div');
+      msgDiv.className = 'flex justify-end';
+      msgDiv.innerHTML = `<div class="bg-green-500 text-white p-3 rounded-xl shadow text-sm max-w-[80%]">${input.value}</div>`;
+
+      chat.appendChild(msgDiv);
+      chat.scrollTop = chat.scrollHeight;
+      input.value = '';
+    }
+  </script>
+</body>
+</html>
