@@ -2,6 +2,7 @@ const express = require('express');
 const router =  express.Router();
 const Model = require('../models/emailModel');
 
+// Crud Operations
 router.post('/add', (req, res) => {
     console.log(req.body);
    new Model(req.body).save()
