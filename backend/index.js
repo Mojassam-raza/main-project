@@ -3,7 +3,8 @@ const { createServer } = require("http");
 const { Server } = require("socket.io");
 
 const UserRouter = require('./routers/userRouter.js');
-const EmailRouter = require('./routers/emailRouter.js');
+// const EmailRouter = require('./routers/emailRouter.js');
+const APIkeyRouter = require('./routers/APIkeyRouter.js');
 const cors = require('cors');
 
 const app = express();
@@ -23,7 +24,7 @@ app.use(cors({
 
 app.use(express.json());
 app.use('/user', UserRouter);
-app.use('/product', EmailRouter);
+app.use('/apikey', APIkeyRouter);
 
 // Endpoint or route
 app.get('/', (req, res) => {

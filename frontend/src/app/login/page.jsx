@@ -18,16 +18,13 @@ const LoginSchema = Yup.object().shape({
 const Login = () => {
   const loginForm = useFormik({
     initialValues: {
-      name: '',
       email: '',
       password: '',
 
     },
     onSubmit: (value, { resetForm }) => {
       console.log(value);
-      setTimeout(() => {
-        resetForm();
-      }, 3000);
+   
       // submit values to backend
 
       axios.post('http://localhost:5000/user/authenticate', value)
