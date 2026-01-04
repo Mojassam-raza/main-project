@@ -1,11 +1,12 @@
+"use client";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { Plus, MoreVertical, KeyRound } from "lucide-react";
 
 
 export default function ManageApiKey() {
   const [copiedId, setCopiedId] = useState(null);
-  const navigate = useNavigate();
+  const router = useRouter();
   const [keys, setKeys] = useState([
     {
       id: 1,

@@ -1,6 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
 import ChatBox from "./ChatBox";
-import ManageApiKey from "./user/manage-api-key/page";
 
 export default function App() {
   return (
@@ -15,12 +14,12 @@ export default function App() {
             </h1>
 
             {/* Navigation Button */}
-            <Link
+            {/* <Link
               to="/manage-api-keys"
               className="mb-6 bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 rounded-lg text-sm"
             >
               Manage API Keys
-            </Link>
+            </Link> */}
 
             <ChatBox />
           </div>
@@ -28,7 +27,7 @@ export default function App() {
       />
 
       {/* API Keys Page */}
-      <Route path="/manage-api-keys" element={<ManageApiKey />} />
+      {/* <Route path="/manage-api-keys" element={<ManageApiKey />} /> */}
     </Routes>
   );
 }

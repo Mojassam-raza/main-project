@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import React from 'react'
 
 const Home = () => {
@@ -17,6 +17,15 @@ const Home = () => {
       <button className='global-btn'>Global Button</button>
 
       <div className='grid grid-cols-3 gap-4 mt-4'>
+
+        {/* Navigation Button */}
+              <Link 
+                  href="/manage-api-key"
+
+              className="mb-6 bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 rounded-lg text-sm"
+            >
+              Manage API Keys
+            </Link>
       
     </div>
 
