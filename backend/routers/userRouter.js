@@ -96,7 +96,7 @@ router.put('/update/:id', (req, res) => {
 
 router.post('/authenticate', (req, res) => {
     console.log(req.body);
-    findOne(req.body)
+    Model.findOne(req.body)
         .then((result) => {
             if (result) {
                 const { _id } = result;

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Model = require('../models/emailModel');
+const Model = require('../models/APIkeyModel');
 
 // Crud Operations
 router.post('/add', (req, res) => {
@@ -44,3 +44,5 @@ router.get('/getbyuser/:userId', (req, res) => {
         res.status(500).json(err);
     });
 })
+
+module.exports = router;
